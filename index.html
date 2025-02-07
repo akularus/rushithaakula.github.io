@@ -1,0 +1,534 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Rushitha Akula Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-gem"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Rushitha Akula</h1>
+								<p>Hello! I am <a href="https://www.linkedin.com/in/rushitha-akula-74a1381a4/"> Rushitha Akula</a> <br />
+								I am a data analyst and graduate student with experience in </p>
+								<p id="typewriter" class="highlighted-text" style="color: #c41e4e; font-size: 2rem;"></p>
+								
+								<script>
+								  const phrases = ["Data Analysis", "Data Engineering", "Data Visualization"];
+								  let currentPhrase = 0;
+								  let letterIndex = 0;
+								  let direction = 1; // 1 for typing, -1 for erasing
+								  const typingSpeed = 150;
+								  const pauseTime = 1000;
+								  const element = document.getElementById("typewriter");
+								
+								  function typeEffect() {
+									element.innerHTML = phrases[currentPhrase].slice(0, letterIndex);
+									if (direction === 1) {
+									  if (letterIndex < phrases[currentPhrase].length) {
+										letterIndex++;
+										setTimeout(typeEffect, typingSpeed);
+									  } else {
+										setTimeout(() => {
+										  direction = -1;
+										  typeEffect();
+										}, pauseTime);
+									  }
+									} else if (direction === -1) {
+									  if (letterIndex > 0) {
+										letterIndex--;
+										setTimeout(typeEffect, typingSpeed);
+									  } else {
+										currentPhrase = (currentPhrase + 1) % phrases.length;
+										direction = 1;
+										setTimeout(typeEffect, typingSpeed);
+									  }
+									}
+								  }
+								
+								  window.onload = typeEffect;
+								</script> <a href="https://html5up.net/license">Resume</a></p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#about">About</a></li>
+								<li><a href="#work">Experience</a></li>
+								<li><a href="#skills">Skills</a></li>
+								<li><a href="#projects">Projects</a></li>
+								<li><a href="#contact">Contact</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">ABOUT</h2>
+								<span class="image main"><img src="images/Screenshot 2025-02-07 at 1.10.56 PM.png" alt="" /></span>
+								<p> I am a highly driven and progress focused student currently pursuing Masters of Science in Information Systems at Northeastern University and have a strong pursuit for using technology and data to solve real-world problems and create impactful solutions.</p>  
+								<p> I've spent two years employed as a Data Analyst at Accenture and have worked on Oracle database and JDA software which was used to help business seamlessly manage their supply chain and retail processes. My daily tasks involved developing inbound and outbound interfaces for systems such as SAP, IWay, JDA, and Webfocus, resulting in seamless data exchange and improved system integration by customizing workflows to meet specific project requirements.
+								<p> My skill set revolves around predictive analytics, data analysis, data cleaning, data engineering which include programming languages such as SQL, PYTHON, JAVA, JavaScript and tools like Tableau, PowerBI, Alteryx, Talend. </p>
+							</article>
+
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major">Experience</h2>
+								<div class="timeline">
+									<!-- Most Recent Experience First -->
+									<h3>
+										<a href="https://www.northeastern.edu/" target="_blank" style="color: #fff; text-decoration: none;">
+											Graduate Teaching Assistant - Northeastern University
+										  </a>
+									</h3>
+										<span>Sep 2024 - Present</span>
+										<p></p>
+										<blockquote>
+												• Teach core object orienated concepts, conduct demos on key tools, and simplify complex topics for students.<br>
+										        • Grade assignments, provide feedback, and facilitate class discussions to promote engagement and critical thinking.<br>
+										        • Hold office hours for personalized student support, while also assisting with course administration and mentoring.
+									    </blockquote>
+								</div>
+								<div class="timeline">
+									<!-- Most Recent Experience First -->
+									<h3>
+										<a href="https://www.accenture.com/us-en" target="_blank" style="color: #fff; text-decoration: none;">
+											Data Analyst - Accenture
+										  </a>
+									</h3>
+										<span>November 2021 - August 2023</span>
+										<p></p>
+										<blockquote>
+												• Designed and implemented custom scripts and reports for multiple markets/regions, increasing reporting efficiency by 30% through the creation of new databases, tables, and front-end pages for custom business processes.<p></p>
+										        • Deployed customized solutions as part of TCO initiatives, enhancing system reliability and user access, while contributing to major configuration releases by collaborating with cross-functional teams.<p></p>
+												• Analyzed and resolved technical and functional incidents in Demand and Fulfillment processes, achieving a 95% resolution rate within SLA timelines by leveraging expertise in troubleshooting and user collaboration.
+									    </blockquote>
+								</div>
+							</article>
+
+						<!-- Skills -->
+						  <!-- Skills Section -->
+						   <article id="skills">
+							<h2 class="major">Skills</h2>
+							<span class="image main"><img src="images/Screenshot 2025-02-07 at 12.59.18 PM.png" alt="" /></span>
+							<!-- Navigation Inside the Skills Section -->
+							 <nav class="skills-nav">
+								<ul>
+									<li><button onclick="showContent('languages')">Languages</button></li>
+									<li><button onclick="showContent('databases')">Databases</button></li>
+									<li><button onclick="showContent('data-tools')">Data Analytics Tools</button></li>
+									<li><button onclick="showContent('ml')">Machine Learning</button></li>
+								</ul>
+							</nav>
+							<!-- Content Below Navigation -->
+							 <div class="content-container">
+								<div id="languages" class="content-section" style="display: none;">
+									<h2>Programming Languages</h2>
+									<p>Python, SQL, Java, JavaScript, HTML, CSS, PHP, R</p>
+									<button onclick="resetSkills()">Back</button>
+								</div>
+								<div id="databases" class="content-section" style="display: none;">
+									<h2>Databases</h2>
+									<p>MySQL, Oracle, MS SQL, PostgreSQL, MongoDB, DynamoDB</p>
+									<button onclick="resetSkills()">Back</button>
+								</div>
+								<div id="data-tools" class="content-section" style="display: none;">
+									<h2>Data Analytics Tools</h2>
+									<p>Tableau, Power BI, Alteryx, Talend, Snowflake, Excel</p>
+									<button onclick="resetSkills()">Back</button>
+								</div>
+								<div id="ml" class="content-section" style="display: none;">
+									<h2>Machine Learning</h2>
+									<p> NumPy, Pandas, Matplotlib, Scikit-learn, TensorFlow, PyTorch</p>
+									<button onclick="resetSkills()">Back</button>
+								</div>
+								<script>
+								function showContent(sectionId) {
+									// Get all buttons and the navigation container
+									const buttons = document.querySelectorAll('.skills-nav ul li button');
+									const navContainer = document.querySelector('.skills-nav');
+									
+									// Hide all buttons except the clicked one
+									buttons.forEach(button => {
+										if (button.getAttribute("onclick").includes(sectionId)) {
+											button.style.display = "block"; // Keep the clicked button visible
+										} 
+										else {
+											button.style.display = "none"; // Hide all other buttons
+											
+										}
+									});
+									// Hide the navigation container to prevent extra space
+									navContainer.style.display = "flex"; 
+									// Hide all content sections
+									const sections = document.querySelectorAll('.content-section');
+									sections.forEach(section => {
+										section.style.display = 'none';
+									});
+									// Show the selected section
+									const selectedSection = document.getElementById(sectionId);
+									if (selectedSection) {
+										selectedSection.style.display = 'block';
+									}
+								}
+								// Function to reset the skills section and bring back all buttons
+								function resetSkills() {
+									const buttons = document.querySelectorAll('.skills-nav ul li button');
+									const navContainer = document.querySelector('.skills-nav');
+									// Make all buttons visible again
+									buttons.forEach(button => {
+										button.style.display = "block";
+									});
+									// Show the navigation container again
+									navContainer.style.display = "flex";
+									// Hide all content sections
+									const sections = document.querySelectorAll('.content-section');
+									sections.forEach(section => {
+										section.style.display = 'none';
+									});
+								}
+							    </script>
+							</div>
+						</article>
+
+						<!-- Projects -->
+						<article id="projects">
+							<h2 class="major">Projects</h2>
+							<div class="timeline">
+								<!-- Most Recent Project First -->
+								<h3>
+									<a href="https://docs.google.com/document/d/1TdjQsJlCjSmV9NFnAj4FofQuvXMh3QtfRwa0-C0Bw-I/edit?tab=t.0#heading=h.27ft3njdhf6a" target="_blank" style="color: #fff; text-decoration: none;">
+										Analysis of Motor Vehicle Crash Data 
+									  </a>
+								</h3>
+									<span>MySQL, Alteryx, Talend, PowerBI, Tableau</span>
+									<p></p>
+									<blockquote>
+											• Built ETL workflows in Talend and Alteryx to transform, clean, and integrate datasets from multiple sources, ensuring data consistency and accuracy.<br>
+											• Designed and implemented a dimensional data model to structure accident-related data for enhanced query performance and reporting.<br>
+											• Designed interactive dashboards using Power BI and Tableau to visualize and derive insights on accident frequency, injury patterns, and high-risk zones.
+									</blockquote>
+							</div>
+							<div class="timeline">
+								<h3>
+									<a href="https://github.com/akularus/Moving-and-Storage-Rental-Services-Project" target="_blank" style="color: #fff; text-decoration: none;">
+										Moving-and-Storage-Rental-Services
+									  </a>
+								</h3>
+									<span>MySQL, MsSQL, Python, Streamlit, Tableau</span>
+									<p></p>
+									<blockquote>
+											• Designed and implemented a sophisticated inventory management system that optimizes stock levels and reduces operational costs. The system employs predictive analytics to forecast demand, ensuring efficient resource allocation and improved service delivery.<br>
+											• Conducted an in-depth analysis of moving and storage rental data, utilizing tools such as SQL, Power BI, and Tableau to uncover trends and insights.<br>
+											• Developed a user-friendly platform that streamlines the rental process for customers. Features include intuitive search functionalities, real-time availability updates, and seamless booking procedures, all aimed at enhancing the overall user experience.
+									</blockquote>
+							</div>
+							<div class="timeline">
+								<h3>
+									<a href="https://github.com/akularus/Data_Science_Engineering_Methods" target="_blank" style="color: #fff; text-decoration: none;">
+										IBM HR Analytics Attrition
+									  </a>
+								</h3>
+									<span>NumPy, Pandas, Matplotlib, Scikit-learn, TensorFlow</span>
+									<p></p>
+									<blockquote>
+											• Applied feature selection techniques to identify key variables affecting employee attrition, optimizing model efficiency.<br>
+											• Used SHAP (SHapley Additive Explanations) and LIME (Local Interpretable Model-Agnostic Explanations) to explain model decisions and provide actionable business insights.<br>
+											• Compared multiple machine learning models, including decision trees, random forests, and logistic regression, to determine the best-fit model for attrition prediction.
+									</blockquote>
+							</div>
+						</article>
+
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/rushitha-akula-74a1381a4/" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+									<li><a href="mailto:akula.rus@northeastern.edu" class="icon fas fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://github.com/akularus" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</article>
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0; 
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer 
+					<footer id="footer">
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer> -->
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
